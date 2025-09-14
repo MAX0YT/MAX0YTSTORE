@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /index.html
+Allow: /HTML/Keys.html
+Allow: /HTML/Keys/SteamKeys.html
+Allow: /HTML/Keys/Steam/Game.html
+Allow: /HTML/Services.html
+
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /images/
+Disallow: /HTML/Authorization.html
+
+Crawl-delay: 1
+
+Sitemap: https://localhost/sitemap.xml

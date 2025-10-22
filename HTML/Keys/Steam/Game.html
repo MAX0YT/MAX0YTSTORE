@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Ключи на игры</title>
+<html prefix="og: http://ogp.me/ns#">
+<head id="head">
     <link rel="icon" href="/images/Header/Icon.png" type="image/png">  
   <meta charset="UTF-8">
+  <meta name="robots" content="index, follow">
   <meta name="viewport" content="
   width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.Max0ytStore.ru">
+  <meta property="og:description" content="Магазин с выгодными ценами на ключи для игр steam, быстрой отправкой ключа, удобным интерфейсом и без обмана!">
   <link href="/styles/output.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
@@ -17,31 +20,31 @@
 <nav class="bg-gree fixed w-full z-50 top-0 start-0 border-b border-dgree">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
   <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse w-30">
-      <img src="/images/Header/Logo.png" width="70%" alt="Max0ytStore Logo">
+      <img src="images/Header/Logo.png" width="70%" alt="Max0ytStore Logo">
   </a>
-  <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-    <a id="loginDiv" href="/HTML/Authorization.html" class="m-0">
+  <div id="loginDiv" class="flex order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <a href="/HTML/Authorization.html" class="m-0">
       <button type="button" class="hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">Войти</button>
     </a>
   </div>
-  <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-gree">
-      <a href="/HTML/Keys.html" class="m-0">
-      <button type="button" class="flex items-center justify-center hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center h-10 w-50">
-        <img alt="Key photo" src="/images/Header/Key.png" class="w-5 h-5 ">
-        Ключи на игры
+  <div class="items-center justify-between  w-auto md:flex order-1" id="navbar-sticky">
+    <ul class="flex p-0 font-medium rounded-lg space-x-8 rtl:space-x-reverse flex-row md:mt-0">
+      <a href="HTML/Keys.html" class="m-0">
+      <button type="button" class="flex items-center justify-center hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm md:px-4 md:py-2 text-center ww-10 hh-10 md:w50">
+        <img alt="Key photo" src="images/Header/Key.png" class="w-5 h-5">
+        <span class="hiddenn md:nonhidden">Ключи на игры</span>
       </button>
       </a>
-      <a href="/HTML/Services.html" class="m-0">
-      <button type="button" class="flex items-center justify-center hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center h-10 w-50">
-        <img alt="Paper photo" src="/images/Header/Paper.png" class="w-5 h-5">
-        Сервисы
+      <a href="HTML/Services.html" class="m-0">
+      <button type="button" class="flex items-center justify-center hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm md:px-4 md:py-2 text-center ww-10 hh-10 md:w50">
+        <img alt="Paper photo" src="images/Header/Paper.png" class="w-5 h-5">
+        <span class="hiddenn md:nonhidden">Сервисы</span>
       </button>
       </a>
-      <a href="/HTML/Сurrency.html" class="m-0">
-      <button type="button" class="flex items-center justify-center text-3xl hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center h-10 w-50">
-        <img alt="Coins photo" src="/images/Header/Coins.png" class="w-5 h-5">
-        Игровая валюта
+      <a href="HTML/Сurrency.html" class="m-0">
+      <button type="button" class="flex items-center justify-center text-3xl hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm md:px-4 md:py-2 text-center ww-10 hh-10 md:w50">
+        <img alt="Coins photo" src="images/Header/Coins.png" class="w-5 h-5">
+        <span class="hiddenn md:nonhidden">Игровая валюта</span>
       </button>
       </a>
     </ul>
@@ -88,47 +91,49 @@
   </ol>
 </nav>
 
-<div class="rounded-lg flex justify-between h-[600px]">
- <div class="w-1/4 p-3">
-    <img id="mainImg" src="" class="h-4/5 object-cover rounded-lg">
- </div>
- <div class="w-2/4 p-3">
-    <div class="mt-8 mb-4">
-    <span id="mainTitle" class="rounded-lg bg-viol font-bold text-5xl text-yell">
+<div class="rounded-lg flex justify-left h-full flex-col md:flex-row">
+  <div class="flex flex-col md:flex-row w-full md:w-3/4">
+    <div class="md:w-1/3 p-3 w-full">
+      <img id="mainImg" src="" class="h-4/5 object-cover rounded-lg">
+    </div>
+    <div class="md:w-2/3 w-full p-3">
+      <div class="mt-8 mb-4">
+        <span id="mainTitle" class="rounded-lg bg-viol font-bold text-3xl md:text-4xl text-yell">
+          ...
+        </span>
+      </div>
+      <div id="description" class="text-xl font-semibold text-justify">
         ...
-    </span>
+      </div>
+      <div class="font-semibold text-2xl text-y mt-4 text-viol">Скриншоты:</div>
+        <div class="bg-gree rounded-lg">
+          <div class="flex w-full h-38 items-center mt-2">
+            <div class="w-1/3 p-1">
+              <img id="scr1" class="rounded-lg" src="" alt="screen1">
+            </div>
+            <div class="w-1/3 p-1">
+              <img id="scr2" class="rounded-lg" src="" alt="screen2">
+            </div>
+            <div class="w-1/3 p-1">
+              <img id="scr3" class="rounded-lg" src="" alt="screen3">
+            </div>
+          </div>
+          <div class="flex w-full h-38">
+            <div class="w-1/3 p-1">
+              <img id="scr4" class="rounded-lg" src="" alt="screen4">
+            </div>
+            <div class="w-1/3 p-1">
+              <img id="scr5" class="rounded-lg" src="" alt="screen5">
+            </div>
+            <div class="w-1/3 p-1">
+              <img id="scr6" class="rounded-lg" src="" alt="screen6">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="description" class="text-xl font-semibold text-justify">
-        ...
-    </div>
-    <div class="font-semibold text-2xl text-y mt-4 text-viol">Скриншоты:</div>
-    <div class="bg-gree rounded-lg">
-    <div class="flex w-full h-38 items-center mt-2">
-        <div class="w-1/3 p-1">
-            <img id="scr1" class="rounded-lg" src="" alt="screen1">
-        </div>
-        <div class="w-1/3 p-1">
-            <img id="scr2" class="rounded-lg" src="" alt="screen2">
-        </div>
-        <div class="w-1/3 p-1">
-            <img id="scr3" class="rounded-lg" src="" alt="screen3">
-        </div>
-    </div>
-    <div class="flex w-full h-38">
-        <div class="w-1/3 p-1">
-            <img id="scr4" class="rounded-lg" src="" alt="screen4">
-        </div>
-        <div class="w-1/3 p-1">
-            <img id="scr5" class="rounded-lg" src="" alt="screen5">
-        </div>
-        <div class="w-1/3 p-1">
-            <img id="scr6" class="rounded-lg" src="" alt="screen6">
-        </div>
-    </div>
-    </div>
- </div>
- <div class="w-1/4 p-5">
-    <div class="bg-dgree w-full h-full rounded-lg">
+    <div class="md:w-1/3 w-full p-5">
+      <div class="bg-dgree w-full h-full rounded-lg md:p-0 p-5">
         <div class="h-1/4 pt-5">
            <img id="secondImg" src="" class="h-full w-full object-cover rounded-lg">
         </div>
@@ -136,8 +141,8 @@
             ...
         </div>
         <div class="mb-6 text-center items-center">
-        <label for="email" class="mt-4 block mb-2 text-xl font-bold text-yell">Почта</label>
-        <input type="email" id="email" class="mx-auto bg-wgree border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[90%] p-2.5" placeholder="john.doe@company.com" required />
+          <label for="email" class="mt-4 block mb-2 text-xl font-bold text-yell">Почта</label>
+          <input type="email" id="email" class="mx-auto bg-wgree border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[90%] p-2.5" placeholder="john.doe@company.com" required />
         </div> 
         <div class="m-4">
           <div class="flex justify-between">
@@ -153,9 +158,9 @@
           ???
         </div>
         <div class="justify-center flex mt-4">
-        <button id="BuyButton" type="button" class="flex items-center justify-center hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-4xl px-4 py-2 text-center h-20 w-2/3">
-        Купить
-        <img alt="Key photo" src="/images/Header/Key.png" class=" ml-4 w-8 h-8 ">
+          <button id="BuyButton" type="button" class="flex items-center justify-center hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-3xl  px-4 py-2 text-center h-20 w-2/3">
+            Купить
+          <img alt="Key photo" src="/images/Header/Key.png" class=" ml-4 w-8 h-8 ">
         </div>
       </button>
     </div>

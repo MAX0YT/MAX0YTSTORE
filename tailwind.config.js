@@ -1,4 +1,10 @@
 module.exports = {
+  purge: {
+    content: [
+    "./**/*.{js,html,css}",
+    "./node_modules/flowbite/**/*.js"
+  ]
+  },
   content: [
     "./**/*.html",
     "./src/**/*.{js,html,css}",

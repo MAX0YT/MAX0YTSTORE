@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Авторизация - Max0ytStore</title>
+    <link rel="icon" href="/images/Header/Icon.png" type="image/png">  
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="/styles/output.css" as="style" onload="this.rel='stylesheet'">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <!-- Добавляем Firebase -->
+    <script async type="module" src="/scripts/firebase.js"></script>
+    <script defer type="module" src="/scripts/auth.js"></script>
+    <script defer type="module" src="/scripts/auth-handler.js"></script>
+</head>
+
+<body class="bg-wgree">
+
+<nav class="bg-gree fixed w-full z-50 top-0 start-0 border-b border-dgree">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
+  <a href="/index.html" class="flex items-center space-x-3 rtl:space-x-reverse w-30">
+      <img src="images/Header/Logo.png" width="70%" alt="Max0ytStore Logo">
+  </a>
+  <div id="loginDiv" class="flex order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+      <a href="/HTML/Authorization.html" class="m-0">
+      <button type="button" class="hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">Войти</button>
+    </a>
+  </div>
+  <div class="items-center justify-between  w-auto md:flex order-1" id="navbar-sticky">
+    <ul class="flex p-0 font-medium rounded-lg space-x-8 rtl:space-x-reverse flex-row md:mt-0">
+      <a href="/HTML/Keys.html" class="m-0">
+      <button type="button" class="flex items-center justify-center hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm md:px-4 md:py-2 text-center ww-10 hh-10 md:w50">
+        <img alt="Key photo" src="images/Header/Key.png" class="w-5 h-5">
+        <span class="hiddenn md:nonhidden">Ключи на игры</span>
+      </button>
+      </a>
+      <a href="/HTML/Services.html" class="m-0">
+      <button type="button" class="flex items-center justify-center hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm md:px-4 md:py-2 text-center ww-10 hh-10 md:w50">
+        <img alt="Paper photo" src="images/Header/Paper.png" class="w-5 h-5">
+        <span class="hiddenn md:nonhidden">Сервисы</span>
+      </button>
+      </a>
+      <a href="/HTML/Сurrency.html" class="m-0">
+      <button type="button" class="flex items-center justify-center text-3xl hover:text-viol text-yell bg-viol hover:bg-yell focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm md:px-4 md:py-2 text-center ww-10 hh-10 md:w50">
+        <img alt="Coins photo" src="images/Header/Coins.png" class="w-5 h-5">
+        <span class="hiddenn md:nonhidden">Игровая валюта</span>
+      </button>
+      </a>
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<div class="max-w-screen-2xl flex-wrap items-center justify-between mx-auto p-1 m-up-5">
+
+    <section class="pt-16">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 gap-8 lg:gap-16 justify-center flex">
+        <div class="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-gree rounded-lg">
+          <h2 class="text-2xl font-bold text-viol">
+                  Войти в Max0ytStore
+              </h2>
+              <form id="login-form" class="mt-8 space-y-6">
+                  <div>
+                      <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Почта</label>
+                      <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name@company.com" required />
+                  </div>
+                  <div>
+                      <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Пароль</label>
+                       <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required />
+                  </div>
+                  
+                  <div id="error-message" class="text-red-600 text-sm hidden"></div>
+                  
+                  <button type="submit" class="w-full px-5 py-3 text-base font-medium text-center text-yell bg-viol rounded-lg hover:bg-yell hover:text-viol">Войти</button>
+              </form>
+        </div>
+    </div>
+</section>
+
+</div>
+</body>
+</html>

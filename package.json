@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.13"
+    "@tailwindcss/cli": "^4.1.13",
+    "html-minifier-terser": "^7.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",

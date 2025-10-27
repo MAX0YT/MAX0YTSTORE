@@ -6,9 +6,11 @@ Allow: /HTML/Keys/Steam/Game.html
 Allow: /HTML/Services.html
 
 Disallow: /scripts/
+Disallow: /nonminified-scripts/
 Disallow: /styles/
 Disallow: /images/
 Disallow: /HTML/Authorization.html
+Disallow: /nonminified-HTML/
 
 Crawl-delay: 1
 
